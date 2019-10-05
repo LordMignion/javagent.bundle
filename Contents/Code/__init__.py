@@ -6,10 +6,6 @@ import ssl
 from SSLEXTRA import sslOptions
 
 
-def log(text):
-    f = open("/tmp/test.txt","w+")
-    f.write(text + "\n")
-    f.close()
 
 
 # URLS
@@ -28,7 +24,6 @@ class OneJavAgent(Agent.Movies):
     
     
     def search(self, results, media, lang, manual):
-        log("this should work!")
         Log('media.name :%s' % media.name)
         file_name = media.name.replace(' ', '-')
 
@@ -56,4 +51,3 @@ class OneJavAgent(Agent.Movies):
         onejavAgent.update(metadata,media,lang)
         avgleAgent.update(metadata,media,lang)
         buscdnAgent.update(metadata,media,lang)
-    
