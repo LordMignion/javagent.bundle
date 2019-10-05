@@ -18,7 +18,6 @@ def Start():
     HTTP.Headers['User-Agent'] = 'Plex Media Server/%s' % Platform.ServerVersion
     HTTP.Headers['Cookie'] = 'cok=1'
     Log('TEST LOGGING...')
-    print('TEST PRINTING...')
 
 class OneJavAgent(Agent.Movies):
     name = 'onejav'
