@@ -25,6 +25,7 @@ class OneJavAgent(Agent.Movies):
     languages = [Locale.Language.English,  Locale.Language.Japanese]
     primary_provider = True
     accepts_from = ['com.plexapp.agents.localmedia']
+    fallback_agent = False
     
     
     def search(self, results, media, lang, manual):
